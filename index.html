@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Copy &amp; Rabbit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="clipspace">
+      <div class="canvas-shell" id="canvasShell">
+        <div class="canvas-stage" id="canvasStage"></div>
+      </div>
+
+      <header class="floating-bar">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <strong>Copy &amp; Rabbit</strong>
+        </div>
+
+        <div class="space-picker" id="spacePicker">
+          <button class="space-trigger" id="spaceTrigger" aria-expanded="false" aria-haspopup="menu">
+            <span id="activeSpaceName">Demo canvas</span>
+            <span class="chevron" aria-hidden="true"></span>
+          </button>
+          <div class="space-menu" id="spaceMenu" role="menu"></div>
+        </div>
+
+        <button class="tool-btn" id="newSpaceBtn" title="New Space">New canvas</button>
+
+      </header>
+
+    </main>
+
+    <script src="./app.js?v=html-demo-v12"></script>
+  </body>
+</html>
