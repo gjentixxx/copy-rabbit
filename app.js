@@ -1,4 +1,4 @@
-const stateKey = "copy-rabbit.minimal.canvas.v12";
+const stateKey = "copy-rabbit.minimal.canvas.v13";
 
 const demoZoom = 0.58;
 const emptyZoom = 0.92;
@@ -13,201 +13,21 @@ const initialState = {
     { id: "demo", name: "Demo canvas", color: "#87951a" }
   ],
   captures: [
-    {
-      id: "cap-1",
-      type: "note",
-      title: "Text paragraph",
-      content: "A copied paragraph becomes a clean text card with source, timestamp, and enough room to scan the idea without opening another app.",
-      sourceTitle: "Clipboard",
-      sourceDomain: "unknown",
-      sourceApp: "Clipboard",
-      method: "Manual Paste",
-      timestamp: new Date(Date.now() - 180000).toISOString(),
-      spaceId: "demo",
-      tags: ["text"],
-      x: 0,
-      y: 0,
-      w: 398
-    },
-    {
-      id: "cap-2",
-      type: "link",
-      title: "Web link",
-      content: "https://chatgpt.com/",
-      sourceTitle: "ChatGPT",
-      sourceDomain: "chatgpt.com",
-      sourceApp: "Chrome",
-      method: "Browser Extension",
-      timestamp: new Date(Date.now() - 120000).toISOString(),
-      spaceId: "demo",
-      tags: ["link"],
-      x: 0,
-      y: 270,
-      w: 360
-    },
-    {
-      id: "cap-3",
-      type: "image",
-      title: "Image",
-      content: "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=900",
-      sourceTitle: "Pexels",
-      sourceDomain: "images.pexels.com",
-      sourceApp: "Chrome",
-      method: "Browser Extension",
-      timestamp: new Date(Date.now() - 90000).toISOString(),
-      spaceId: "demo",
-      tags: ["image"],
-      x: 430,
-      y: 0,
-      w: 398,
-      previewUrl: "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=900"
-    },
-    {
-      id: "cap-4",
-      type: "video",
-      title: "Video link",
-      content: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      sourceTitle: "YouTube",
-      sourceDomain: "youtube.com",
-      sourceApp: "Chrome",
-      method: "Browser Extension",
-      timestamp: new Date(Date.now() - 240000).toISOString(),
-      spaceId: "demo",
-      tags: ["video"],
-      x: 860,
-      y: 360,
-      w: 360
-    },
-    {
-      id: "cap-5",
-      type: "code",
-      title: "Code snippet",
-      content: "function capture(content, source) {\n  return createCard({ content, source, capturedAt: Date.now() });\n}",
-      sourceTitle: "VS Code",
-      sourceDomain: "local",
-      sourceApp: "VS Code",
-      method: "Desktop App",
-      timestamp: new Date(Date.now() - 300000).toISOString(),
-      spaceId: "demo",
-      tags: ["code"],
-      x: 860,
-      y: 0,
-      w: 398
-    },
-    {
-      id: "cap-6",
-      type: "color",
-      title: "Color palette",
-      content: "#87951a #fbfbf8 #d7d8d0 #11130f",
-      sourceTitle: "Figma",
-      sourceDomain: "figma.com",
-      sourceApp: "Figma",
-      method: "Desktop App",
-      timestamp: new Date(Date.now() - 360000).toISOString(),
-      spaceId: "demo",
-      tags: ["color"],
-      x: 0,
-      y: 510,
-      w: 398
-    },
-    {
-      id: "cap-7",
-      type: "table",
-      title: "Table data",
-      content: "Channel,Status,Priority\nTikTok,Research,High\nPexels,Images,Medium\nDocs,Notes,Low",
-      sourceTitle: "Spreadsheet",
-      sourceDomain: "local",
-      sourceApp: "Numbers",
-      method: "Manual Paste",
-      timestamp: new Date(Date.now() - 420000).toISOString(),
-      spaceId: "demo",
-      tags: ["table"],
-      x: 430,
-      y: 735,
-      w: 398
-    },
-    {
-      id: "cap-8",
-      type: "prompt",
-      title: "AI prompt",
-      content: "Create five concise campaign angles for a privacy-first visual clipboard workspace.",
-      sourceTitle: "Clipboard",
-      sourceDomain: "unknown",
-      sourceApp: "ChatGPT",
-      method: "Manual Paste",
-      timestamp: new Date(Date.now() - 480000).toISOString(),
-      spaceId: "demo",
-      tags: ["prompt"],
-      x: 860,
-      y: 650,
-      w: 398
-    },
-    {
-      id: "cap-9",
-      type: "embed",
-      title: "Embed",
-      content: "<iframe src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" title=\"YouTube video\" allowfullscreen></iframe>",
-      sourceTitle: "Embed code",
-      sourceDomain: "youtube.com",
-      sourceApp: "Clipboard",
-      method: "Manual Paste",
-      timestamp: new Date(Date.now() - 540000).toISOString(),
-      spaceId: "demo",
-      tags: ["embed"],
-      x: 860,
-      y: 915,
-      w: 460
-    },
-    {
-      id: "cap-10",
-      type: "html",
-      title: "HTML preview",
-      content: "<!doctype html><html><head><style>body{margin:0;font-family:Arial,sans-serif;background:#f4f7f2;color:#172015}.hero{padding:34px 28px;text-align:center}.eyebrow{color:#87951a;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}.hero h1{margin:10px 0 8px;font-size:34px;line-height:1}.hero p{margin:0 auto 18px;max-width:360px;font-size:16px;line-height:1.45}.button{display:inline-block;padding:11px 18px;border-radius:999px;background:#87951a;color:white;font-weight:700;text-decoration:none}.panel{margin:0 20px 24px;padding:16px;border:1px solid #d7d8d0;border-radius:12px;background:white;text-align:left}.panel h2{margin:0 0 8px;font-size:18px}.panel code{display:block;padding:12px;border-radius:8px;background:#11130f;color:#f6f6ef}</style></head><body><section class=\"hero\"><div class=\"eyebrow\">W3Schools style HTML</div><h1>My First Heading</h1><p>My first paragraph renders directly inside Copy & Rabbit, so pasted HTML becomes a live preview card.</p><a class=\"button\" href=\"https://www.w3schools.com/html/\">Learn HTML</a></section><section class=\"panel\"><h2>Example</h2><code>&lt;h1&gt;Hello HTML&lt;/h1&gt;</code></section></body></html>",
-      sourceTitle: "w3schools-html-example.html",
-      sourceDomain: "local",
-      sourceApp: "Clipboard",
-      method: "Manual Paste",
-      timestamp: new Date(Date.now() - 600000).toISOString(),
-      spaceId: "demo",
-      tags: ["html"],
-      x: 430,
-      y: 1010,
-      w: 460
-    },
-    {
-      id: "cap-11",
-      type: "file",
-      title: "File",
-      content: "Brand brief.pdf",
-      fileName: "Brand brief.pdf",
-      fileType: "application/pdf",
-      sourceTitle: "Finder",
-      sourceDomain: "local",
-      sourceApp: "Finder",
-      method: "Desktop App",
-      timestamp: new Date(Date.now() - 660000).toISOString(),
-      spaceId: "demo",
-      tags: ["file"],
-      x: 0,
-      y: 735,
-      w: 360
-    },
-    {
-      id: "cap-12",
-      type: "quote",
-      title: "Quote",
-      content: "The best clipboard is the one you never have to organize manually.",
-      sourceTitle: "Article",
-      sourceDomain: "example.com",
-      sourceApp: "Chrome",
-      method: "Manual Paste",
-      timestamp: new Date(Date.now() - 720000).toISOString(),
-      spaceId: "demo",
-      tags: ["quote"],
-      x: 0,
-      y: 965,
-      w: 360
-    }
+    { id: "cap-web-link", type: "link", kind: "web-link", title: "Web Link", content: "https://www.lipsum.com/", footer: "Copied 3s ago", actions: ["open", "duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["link"], x: 0, y: 0, w: 398 },
+    { id: "cap-image-link", type: "image", kind: "image-link", title: "Image Link", content: "https://www.pexels.com/photo/misty-mountains-417173/", previewUrl: "https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=900", footer: "Copied 3s ago", actions: ["open", "duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["image", "link"], x: 430, y: 0, w: 398 },
+    { id: "cap-video-link", type: "video", kind: "video-link", title: "Video Link", content: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", footer: "Copied 3s ago", actions: ["open", "duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["video", "link"], x: 860, y: 0, w: 398 },
+    { id: "cap-image", type: "image", kind: "image", title: "Image", content: "dropped-image.png", previewUrl: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=900&q=80", footer: "Dropped 3s ago", actions: ["download", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["image"], x: 430, y: 560, w: 398 },
+    { id: "cap-video", type: "video", kind: "video", title: "Video", content: "dropped-video.mp4", previewUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg", footer: "Dropped 3s ago", actions: ["download", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["video"], x: 0, y: 560, w: 398 },
+    { id: "cap-screenshot", type: "image", kind: "screenshot", title: "Screenshot", content: "screenshot.png", previewUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg", footer: "Captured 3s ago", actions: ["download", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["screenshot"], x: 860, y: 560, w: 398 },
+    { id: "cap-code", type: "code", kind: "code", title: "Code", content: "const person = {\n  fullName: function() {\n    return this.firstName + \" \" + this.lastName;\n  }\n};", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["code"], x: 0, y: 980, w: 398 },
+    { id: "cap-css", type: "code", kind: "css", title: "CSS", content: "body {\n  background-color: lightblue;\n}\n\nh1 {\n  color: white;\n  text-align: center;\n}", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["code", "css"], x: 430, y: 980, w: 398 },
+    { id: "cap-html", type: "code", kind: "html-code", title: "HTML", content: "<!doctype html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <title>My wonderful website</title>\n</head>\n<body>\n  <h1>Hello HTML</h1>\n</body>\n</html>", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["code", "html"], x: 860, y: 980, w: 398 },
+    { id: "cap-file", type: "file", kind: "file", title: "File", content: "file.pdf", fileName: "file.pdf", fileType: "application/pdf", footer: "Dropped 3s ago", actions: ["download", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["file"], x: 0, y: 1320, w: 398 },
+    { id: "cap-multiple-files", type: "file", kind: "multiple-files", title: "Multiple Files", content: "file.pdf\nfile.px\nfile.exl", fileNames: ["file.pdf", "file.px", "file.exl"], footer: "Dropped 3s ago", actions: ["download", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["file"], x: 430, y: 1320, w: 398 },
+    { id: "cap-text", type: "note", kind: "text", title: "Text", content: "Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["text"], x: 860, y: 1320, w: 398 },
+    { id: "cap-long-text", type: "note", kind: "long-text", title: "Long Text", content: "Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London. It stays readable with clean truncation when the card becomes too full.", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["text"], x: 0, y: 1640, w: 398 },
+    { id: "cap-quote", type: "quote", kind: "quote", title: "Quote", content: "Lorem Ipsum has been the industry's standard dummy text ever since 1966,", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["quote"], x: 430, y: 1640, w: 398 },
+    { id: "cap-prompt", type: "prompt", kind: "prompt", title: "Prompt", content: "Build a web-based product called Clipspace, an automatic visual clipboard workspace that turns everything a user copies into visual, organized cards inside an infinite canvas. The product should feel like a fast visual memory system for everything copied across the internet, browser tabs, documents, design tools, apps, research sessions, and daily work.", footer: "Copied 3s ago", actions: ["duplicate", "delete"], timestamp: new Date(Date.now() - 3000).toISOString(), spaceId: "demo", tags: ["prompt"], x: 860, y: 1640, w: 398 }
   ]
 };
 
@@ -289,7 +109,10 @@ function boardBounds(captures) {
 }
 
 function estimatedHeight(capture) {
-  if (capture.type === "image") return 716;
+  if (capture.kind === "image-link") return 660;
+  if (capture.kind === "image" || capture.kind === "video" || capture.kind === "screenshot" || capture.kind === "video-link") return 360;
+  if (capture.kind === "multiple-files") return 330;
+  if (capture.kind === "long-text" || capture.kind === "prompt") return 380;
   if (capture.type === "color") return 230;
   if (capture.type === "link") return 224;
   if (capture.type === "video") return 250;
@@ -358,14 +181,18 @@ function renderCanvas() {
     card.addEventListener("pointerdown", startDrag);
     card.querySelector("[data-title]").addEventListener("input", updateTitle);
     card.querySelector("[data-title]").addEventListener("keydown", titleKeydown);
-    card.querySelector("[data-delete]").addEventListener("click", (event) => {
+    card.querySelectorAll("[data-delete]").forEach((button) => button.addEventListener("click", (event) => {
       event.stopPropagation();
       deleteCapture(card.dataset.id);
-    });
-    card.querySelector("[data-copy]").addEventListener("click", (event) => {
+    }));
+    card.querySelectorAll("[data-duplicate]").forEach((button) => button.addEventListener("click", (event) => {
       event.stopPropagation();
-      copyCaptureContent(card.dataset.id);
-    });
+      duplicateCapture(card.dataset.id);
+    }));
+    card.querySelectorAll("[data-open]").forEach((button) => button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      openCapture(card.dataset.id);
+    }));
     card.querySelectorAll("[data-download]").forEach((button) => {
       button.addEventListener("click", (event) => {
         event.stopPropagation();
@@ -398,16 +225,16 @@ function scheduleViewport() {
 }
 
 function cardHtml(capture) {
+  const actions = capture.actions || defaultActions(capture);
   return `
     <article class="capture-card" data-id="${capture.id}" data-type="${capture.type}" style="left:${capture.x}px;top:${capture.y}px;width:${capture.w || 398}px">
       <span class="card-label" contenteditable="true" spellcheck="false" data-title="${capture.id}">${escapeHtml(displayTitle(capture.title))}</span>
+      <div class="card-divider"></div>
       ${cardInnerHtml(capture)}
       <div class="card-footer">
-        <span class="time-chip">${relativeTime(capture.timestamp)}</span>
+        <span class="time-chip">${escapeHtml(footerText(capture))}</span>
         <div class="card-actions">
-          ${capture.type === "file" ? `<button class="icon-btn" title="Download file" data-download>${iconSvg("download")}</button>` : ""}
-          <button class="icon-btn" title="Copy content" data-copy>${iconSvg("copy")}</button>
-          <button class="icon-btn" title="Delete" data-delete>${iconSvg("trash")}</button>
+          ${actions.map(actionButtonHtml).join("")}
         </div>
       </div>
       <span class="resize-handle" title="Resize"></span>
@@ -415,8 +242,37 @@ function cardHtml(capture) {
   `;
 }
 
+function defaultActions(capture) {
+  if (capture.type === "file") return ["download", "delete"];
+  if (capture.kind === "image" || capture.kind === "video" || capture.kind === "screenshot") return ["download", "delete"];
+  if (capture.type === "link" || capture.kind === "image-link" || capture.kind === "video-link") return ["open", "duplicate", "delete"];
+  return ["duplicate", "delete"];
+}
+
+function actionButtonHtml(action) {
+  const titles = {
+    open: "Open source",
+    duplicate: "Duplicate card",
+    download: "Download",
+    delete: "Delete"
+  };
+  const data = {
+    open: "data-open",
+    duplicate: "data-duplicate",
+    download: "data-download",
+    delete: "data-delete"
+  };
+  const icon = action === "duplicate" ? "copy" : action === "delete" ? "trash" : action;
+  return `<button class="icon-btn" title="${titles[action]}" ${data[action]}>${iconSvg(icon)}</button>`;
+}
+
+function footerText(capture) {
+  return capture.footer || relativeTime(capture.timestamp);
+}
+
 function cardInnerHtml(capture) {
-  if (capture.type === "image" || isImageSource(capture)) {
+  const kind = capture.kind || capture.type;
+  if (kind === "image-link") {
     const preview = imagePreviewStyle(capture);
     return `
       <div class="image-preview" aria-label="Image preview" ${preview}></div>
@@ -425,6 +281,12 @@ function cardInnerHtml(capture) {
         <span>${escapeHtml(shortUrl(capture.content))}</span>
       </div>
     `;
+  }
+  if (kind === "image" || kind === "screenshot") {
+    return `<div class="image-preview image-preview-short" aria-label="${escapeHtml(capture.title)} preview" ${imagePreviewStyle(capture)}></div>`;
+  }
+  if (kind === "video") {
+    return `<div class="card-inner video-preview" ${videoPreviewStyle(capture)}></div>`;
   }
   if (capture.type === "color") {
     return `
@@ -441,7 +303,7 @@ function cardInnerHtml(capture) {
       </div>
     `;
   }
-  if (capture.type === "video") {
+  if (kind === "video-link") {
     const thumb = videoThumbnailUrl(capture.content);
     return `
       <div class="card-inner video-preview" ${thumb ? `style="background-image:url('${escapeAttribute(thumb)}')"` : ""}>
@@ -488,11 +350,15 @@ function cardInnerHtml(capture) {
     `;
   }
   if (capture.type === "file") {
+    if (kind === "multiple-files") {
+      return `
+        <div class="file-stack">
+          ${(capture.fileNames || [capture.content]).map((name) => fileRowHtml(name)).join("")}
+        </div>
+      `;
+    }
     return `
-      <div class="source-row file-row">
-        <span class="file-icon">${fileExtension(capture)}</span>
-        <span>${escapeHtml(capture.fileName || capture.content)}</span>
-      </div>
+      ${fileRowHtml(capture.fileName || capture.content)}
     `;
   }
   if (capture.type === "quote") {
@@ -501,11 +367,20 @@ function cardInnerHtml(capture) {
     `;
   }
   const body = capture.type === "code"
-    ? `<pre>${escapeHtml(capture.content)}</pre>`
-    : `<p>${escapeHtml(capture.content)}</p>`;
+    ? `<pre>${escapeHtml(trimContent(capture.content, kind === "css" || kind === "html-code" ? 150 : 130))}</pre>`
+    : `<p>${escapeHtml(trimContent(capture.content, kind === "long-text" || kind === "prompt" ? 285 : 180))}</p>`;
   return `
     <div class="card-inner">
       <div class="card-body">${body}</div>
+    </div>
+  `;
+}
+
+function fileRowHtml(name) {
+  return `
+    <div class="source-row file-row">
+      <span class="source-icon">${iconSvg("file")}</span>
+      <span>${escapeHtml(name)}</span>
     </div>
   `;
 }
@@ -864,6 +739,11 @@ function imagePreviewStyle(capture) {
   return url ? `style="background-image:url('${escapeAttribute(url)}')"` : "";
 }
 
+function videoPreviewStyle(capture) {
+  const url = capture.previewUrl || videoThumbnailUrl(capture.content);
+  return url ? `style="background-image:url('${escapeAttribute(url)}')"` : "";
+}
+
 function imagePreviewUrlFromContent(content) {
   if (isDirectImageUrl(content)) return content;
   return pexelsPhotoImageUrl(content) || "";
@@ -941,6 +821,25 @@ async function copyCaptureContent(id) {
   }
 }
 
+function duplicateCapture(id) {
+  const capture = state.captures.find((item) => item.id === id);
+  if (!capture) return;
+  state.captures.push({
+    ...structuredClone(capture),
+    id: `cap-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+    x: capture.x + 36,
+    y: capture.y + 36,
+    timestamp: new Date().toISOString()
+  });
+  render();
+}
+
+function openCapture(id) {
+  const capture = state.captures.find((item) => item.id === id);
+  if (!capture || !/^https?:\/\//i.test(capture.content)) return;
+  window.open(capture.content, "_blank", "noopener,noreferrer");
+}
+
 function downloadCaptureFile(id) {
   const capture = state.captures.find((item) => item.id === id);
   if (!capture) return;
@@ -951,7 +850,7 @@ function downloadCaptureFile(id) {
   }));
 
   link.href = objectUrl;
-  link.download = capture.fileName || capture.content || "download";
+  link.download = capture.fileNames ? "copy-rabbit-files.txt" : capture.fileName || capture.content || "download";
   document.body.append(link);
   link.click();
   link.remove();
@@ -1078,11 +977,13 @@ function fileExtension(capture) {
 
 function iconSvg(name) {
   const icons = {
+    open: `<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M96 64h96v96"></path><path d="M88 168 192 64"></path><path d="M160 184v24a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V104a8 8 0 0 1 8-8h24"></path></svg>`,
     copy: `<svg viewBox="0 0 256 256" aria-hidden="true"><rect x="88" y="40" width="128" height="128" rx="8"></rect><path d="M168 168v40a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V96a8 8 0 0 1 8-8h40"></path></svg>`,
     trash: `<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M216 56H40"></path><path d="M96 56V40a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v16"></path><path d="M200 56l-8 152a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16L56 56"></path><path d="M104 104v64"></path><path d="M152 104v64"></path></svg>`,
     download: `<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M128 32v120"></path><path d="m80 104 48 48 48-48"></path><path d="M48 184v24a8 8 0 0 0 8 8h144a8 8 0 0 0 8-8v-24"></path></svg>`,
     globe: `<svg viewBox="0 0 256 256" aria-hidden="true"><circle cx="128" cy="128" r="88"></circle><path d="M40 128h176"></path><path d="M128 40c24 24 36 56 36 88s-12 64-36 88c-24-24-36-56-36-88s12-64 36-88z"></path></svg>`,
-    code: `<svg viewBox="0 0 256 256" aria-hidden="true"><path d="m96 80-48 48 48 48"></path><path d="m160 80 48 48-48 48"></path><path d="m144 56-32 144"></path></svg>`
+    code: `<svg viewBox="0 0 256 256" aria-hidden="true"><path d="m96 80-48 48 48 48"></path><path d="m160 80 48 48-48 48"></path><path d="m144 56-32 144"></path></svg>`,
+    file: `<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M152 32H72a8 8 0 0 0-8 8v176a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8V72Z"></path><path d="M152 32v40h40"></path></svg>`
   };
   return icons[name] || icons.copy;
 }
